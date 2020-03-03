@@ -1,0 +1,33 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1582559693187",
+            "Action": [
+                "apigateway:POST"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        },
+        {
+            "Sid": "Stmt1582559755882",
+            "Action": [
+                "lambda:CreateFunction"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        },
+        {
+            "Sid": "Stmt1582560009054",
+            "Action": "ses:*",
+            "Effect": "Allow",
+            "Resource": "*"
+        },
+        {
+            "Sid": "Stmt1582561541582",
+            "Action": "logs:*",
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1583159947314",
+      "Principal" : {
+        "Service" : [
+          "lambda.amazonaws.com",
+          "apigateway.amazonaws.com"
+        ]
+      },
+      "Action": "sts:AssumeRole",
+      "Effect": "Allow"
+    }
+  ]
+}

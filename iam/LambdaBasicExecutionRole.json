@@ -1,0 +1,27 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+        {
+            "Sid": "",
+            "Action": [
+                "ses:GetIdentityVerificationAttributes",
+                "ses:SendEmail",
+                "ses:SendRawEmail",
+                "ses:VerifyEmailIdentity"
+            ],
+            "Resource": "arn:aws:ses:us-east-1:305496103131:identity/*",
+            "Effect": "Allow"
+        }
+
+  ]
+}
